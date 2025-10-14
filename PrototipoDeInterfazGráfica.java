@@ -1,6 +1,5 @@
 package prototipodeinterfazgráfica;
 import javax.swing.JOptionPane;
-import javax.swing.ImageIcon;
 /**
  *
  * @author games
@@ -15,8 +14,8 @@ public class PrototipoDeInterfazGráfica {
        String Menu, Seleccion, Nombre, Tipo_Acceso, Quickpass1, Acceso, Registro; 
        int Opcion = 0,Quickpass ;
        
-       //Utilizamos un bucle do-While para repetir el menú hasta que el usuario
-       //decida salirse del programa.
+       /**Utilizamos un bucle do-While para repetir el menú hasta que el usuario
+      decida salirse del programa.*/
        do{ 
           Menu = "******* Control de acceso del condominio Valhalla *******\n"
                 +"1. Registrar el acceso. \n"
@@ -24,14 +23,14 @@ public class PrototipoDeInterfazGráfica {
                 +"3. Salir. \n"
                 +"Selecciones alguna de las opciones: ";
           
-          //Igualamos la variable Seleccion con null,esto como forma de prevenir
-          //errores y cerrar el programa de forma segura cuando el usuario cancela la ventana.
+          /**Igualamos la variable Seleccion con null,esto como forma de prevenir
+          errores y cerrar el programa de forma segura cuando el usuario cancela la ventana.*/
           Seleccion =JOptionPane.showInputDialog(null, Menu, "Menú principal",JOptionPane.QUESTION_MESSAGE);
           if (Seleccion == null) break;
           Opcion = Integer.parseInt(Seleccion);
                  
-          //Ingresamos al usuario en un switch-case para decidir qué acción 
-          //ejecutar según la opción que el usuario elija en el menú.
+          /**Ingresamos al usuario en un switch-case para decidir qué acción 
+          ejecutar según la opción que el usuario elija en el menú.*/
           
          switch (Opcion){
              case 1:
@@ -59,8 +58,8 @@ public class PrototipoDeInterfazGráfica {
           
          
         case 2:
-         // Como aún no usaremos arreglos mostramos este mensaje porque no podemos
-         // guardar información de las personas que se registran.  
+         /**Como aún no usaremos arreglos mostramos este mensaje porque no podemos
+          guardar información de las personas que se registran.*/
         JOptionPane.showMessageDialog(null, "Historial no disponible ","Consulta de Registro", JOptionPane.INFORMATION_MESSAGE);
         break;
         
@@ -78,3 +77,4 @@ public class PrototipoDeInterfazGráfica {
        } 
     }
     
+
